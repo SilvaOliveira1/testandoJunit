@@ -12,24 +12,24 @@ public class CalculadoraTest {
 	
 	Calculadora calculadora = new Calculadora();
 	
-	//***Realizando testes na função de somar, para verificar se está retornando
+	//***Realizando testes na função de subtração, para verificar se está retornando
 	//o valor correto e aceitando os parâmetros certos.
 	
 	@Test
-	@DisplayName("Teste de soma de inteiros")
-	void testarSomaInteiro() {
-		assertEquals(10, calculadora.somar(5, 5));
+	@DisplayName("Teste de subtração de inteiros")
+	void testarSubtrairInteiro() {
+		assertEquals(2, calculadora.subtracao(10, 8));
 	}
 	
 	@Test
-	@DisplayName("Teste de soma de caracteres")
-	void testarSomaCaracteres() {
-		assertEquals("AB", calculadora.somar('A', 'B'));
+	@DisplayName("Teste de subtração de caracteres")
+	void testarSubtrairCaracteres() {
+		assertEquals("AB", calculadora.subtracao('A', 'B'));
 	}
 	
 	@Test
-	@DisplayName("Teste de soma de floats")
-	void testarSomaFloat() {
-		assertEquals(5, calculadora.somar(2.5F, 2.5F));
+	@DisplayName("Teste de subtração de floats")
+	void testarSubtrairFloat() {
+		assertEquals(2.6, calculadora.subtracao(5.1F, 2.5F));
 	}
 }

@@ -16,7 +16,8 @@ public class Calculadora {
         return primeiroNumero * segundoNumero;
     }
     
-    public float subtracao(int primeiroNumero, int segundoNumero){
+    //COLOCANDO O TIPO FLOAT PARA TESTAR FUNÇÃO
+    public float subtracao(float primeiroNumero, float segundoNumero){
         return primeiroNumero - segundoNumero;
     }
 }
